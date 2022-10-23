@@ -13,7 +13,7 @@ export const ArticleDetails = (props) => {
     const token = localStorage.getItem('myToken');
 
     useEffect(() => {
-        fetch(`http://127.0.0.1:8000/articles/${params.slug}/`,
+        fetch(`https://blogapi22.herokuapp.com/articles/${params.slug}/`,
             {
                 method: 'GET',
                 headers: {
@@ -27,7 +27,7 @@ export const ArticleDetails = (props) => {
     }, [params.slug, token]);
 
     useEffect(() => {
-        fetch('http://127.0.0.1:8000/dj-rest-auth/user/',
+        fetch('https://blogapi22.herokuapp.com/dj-rest-auth/user/',
             {
                 method: 'GET',
                 headers: {

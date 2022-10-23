@@ -1,7 +1,7 @@
 export default class ApiService {
 
     static InsertArticle(body, token) {
-        return fetch('http://127.0.0.1:8000/articles/',
+        return fetch('https://blogapi22.herokuapp.com/articles/',
             {
                 method: 'POST',
                 headers: {
@@ -14,7 +14,7 @@ export default class ApiService {
     }
 
     static RegisterUser(body) {
-        return fetch('http://127.0.0.1:8000/dj-rest-auth/registration/',
+        return fetch('https://blogapi22.herokuapp.com/dj-rest-auth/registration/',
             {
                 method: 'POST',
                 headers: {
@@ -26,7 +26,7 @@ export default class ApiService {
     }
 
     static UpdateArticle(article_slug, body, token) {
-        return fetch(`http://127.0.0.1:8000/articles/${article_slug}/`,
+        return fetch(`https://blogapi22.herokuapp.com/articles/${article_slug}/`,
             {
                 method: 'PUT',
                 headers: {
@@ -39,7 +39,7 @@ export default class ApiService {
     }
 
     static DeleteArticle(article_slug, token) {
-        return fetch(`http://127.0.0.1:8000/articles/${article_slug}/`,
+        return fetch(`https://blogapi22.herokuapp.com/articles/${article_slug}/`,
             {
                 method: 'DELETE',
                 headers: {

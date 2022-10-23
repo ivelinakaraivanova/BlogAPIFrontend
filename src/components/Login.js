@@ -9,7 +9,7 @@ export const Login = () => {
     const navigate = useNavigate();
 
     const login = () => {
-        fetch('http://127.0.0.1:8000/dj-rest-auth/login/',{
+        fetch('https://blogapi22.herokuapp.com/dj-rest-auth/login/',{
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
